@@ -1,0 +1,6 @@
+close all;
+SNR_dB =0:40;
+BER = 0.5*(1-sqrt(SNR_dB./(SNR_dB+1)));
+plot(SNR_dB,BER);
+xlabel('SNR(dB)');
+ylabel('BER');
